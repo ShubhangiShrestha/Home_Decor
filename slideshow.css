@@ -1,0 +1,195 @@
+@media (min-width:768px){
+  .slideshow{
+     display:block;
+     padding-bottom:0;
+     margin-bottom:0;
+  }
+}
+@media (max-width:767px){
+  .slideshow{
+}
+}
+.slideshow{
+margin:0;
+padding-top:110px;
+height:700px;
+background-color:white;
+box-sizing:border-box;
+margin-bottom:10px;
+padding-bottom:0;
+}
+.content{
+ margin:auto;
+ width:190px;
+ perspective:1000px;
+ position: relative;
+ padding-top:20px;
+ margin-bottom:0px;
+ padding-bottom:0px;
+}
+.content-carousel{
+  width:100%;
+  position:absolute;
+  float:right;
+  animation:rotar 15s infinite linear;
+  transform-style: preserve-3d;
+}
+.content-carousel:hover {
+ animation-play-state:paused;
+ cursor:pointer;
+}
+.content-carousel figure{
+ width:100%;
+ height:180px;
+ border:1px solid #4d444d;
+ overflow:hidden;
+ position:absolute;
+}
+.content-carousel figure:nth-child(1){
+ transform:rotateY(0deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(2){
+ transform:rotateY(40deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(3){
+ transform:rotateY(80deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(4){
+ transform:rotateY(120deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(5){
+ transform:rotateY(160deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(6){
+ transform:rotateY(200deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(7){
+ transform:rotateY(240deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(8){
+ transform:rotateY(280deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(9){
+ transform:rotateY(320deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(0){
+ transform:rotateY(360deg) translateZ(300px);
+}
+.shadow{
+ position: absolute;
+ box-shadow:0px 0px 20px 0px #000;
+ border-radius:2px;
+}
+.content-carousel img{
+  image-rendering:auto;
+  transition:all 100ms;
+  width:100%;
+  height:100%;
+}
+.fa-facebook {
+  border-radius:4px;
+  height:50px;
+  width:50px;
+  background: #3B5998;
+  color: white;
+  text-align:center;
+  padding-top:10px;
+  font-size:30px;
+}
+.fa-linkedin {
+  border-radius:4px;
+  height:50px;
+  width:50px;
+  background: #007bb5;
+  color: white;
+  text-align:center;
+  padding-top:10px;
+  font-size:30px;
+}
+.fa-youtube {
+  border-radius:4px;
+  height:50px;
+  width:50px;
+  background: #bb0000;
+  color: white;
+  text-align:center;
+  padding-top:10px;
+  font-size:30px;
+}
+.fa-instagram{
+  border-radius:4px;
+  height:50px;
+  width:50px;
+  background:deeppink;
+  color: white;
+  text-align:center;
+  padding-top:10px;
+  font-size:30px;
+}
+.col-xs-3{
+  margin-left:20px;
+  margin-right:20px;
+}
+.nav-item a:hover {
+  background-color:#555;
+}
+
+.content-carousel img:hover {
+  transform:scale(1.2);
+  transition:all 100ms;
+}
+@keyframes rotar{
+ from{
+  transform:rotateY(0deg);
+ } to{
+  transform:rotateY(360deg);
+ }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top:20px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.column .card p .price{
+    text-align:centre;
+    color:maroon;
+}
+.container-fluid .Heading h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  margin-top:40px;
+}
+@media (min-width:992px){
+.container .card p{
+     font-size:40px;
+}   
+}
+
+.container .row .card h3{
+    color:deeppink;
+}
